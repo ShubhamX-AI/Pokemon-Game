@@ -5,6 +5,7 @@ gameovermusic = new Audio("gameover.mp3")
 setTimeout(()=>{
     gamemusic.play()
 },1000)
+gamemusic.loop = true
 document.onkeydown = (e)=>{
     if(e.keyCode == 87){
         hero = document.querySelector(".hero")
