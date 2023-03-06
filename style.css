@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: hidden;
+}
+
+.gamecointainer{
+    background-image: url(background.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero{
+    background-image: url(hero.png);
+    height: 12vh;
+    width: 6vw;
+    background-size: 6vw 12vh;
+    position: absolute;
+    bottom: 10vh;
+    left: 250px;
+}
+
+.villain{
+    background-image: url(villain.png);
+    height: 16vh;
+    width: 9vw;
+    background-size: 9vw 16vh;
+    position: absolute;
+    bottom: 10vh;
+    left: 48vw;
+}
+
+.scorecount{
+    position: absolute;
+    right: 5vw;
+    top: 7vh;
+    font-size: x-large;
+    border: 2px solid chartreuse;
+    padding: 15px;
+    width: 12vw;
+    text-align: center;
+}
+.gameover{
+    position: absolute;
+    top: 42vh;
+    left: 39vw;
+    font-size: 71px;
+    visibility: hidden;
+}
+
+.animateHero{
+    animation: animatehero 1s linear;
+}
+.animateVillain{
+    animation: villainani 4s linear infinite;
+}
+
+@keyframes animatehero {
+    0%{
+        bottom: 10vh;
+    }
+    50%{
+        bottom: 40vh;
+    }
+    100%{
+        bottom: 10vh;
+    }
+}
+
+@keyframes villainani {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -100vw;
+    }
+}
